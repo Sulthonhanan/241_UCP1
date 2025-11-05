@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-    const film = sequelize.define("hotel",{
+    const hotel = sequelize.define("hotel",{
         id : {
             type : DataTypes.INTEGER,
             autoIncrement : true,
@@ -7,19 +7,19 @@ module.exports = (sequelize, DataTypes) => {
 
         },
         tipe_kamar:{
-            type : DataTypes.VARCHAR,
+            type : DataTypes.STRING,
         },
         kapasitas_tamu:{
-            type : DataTypes.INTEGER,
+            type : DataTypes.STRING,
         },
         lantai:{
-            type : DataTypes.INTEGER,
+            type : DataTypes.STRING,
         },
         fasilitas:{
-            type : DataTypes.VARCHAR,
+            type : DataTypes.STRING,
         },
          tanggal_pesan:{
-            type : DataTypes.VARCHAR,
+            type : DataTypes.STRING,
         }
       });
     return hotel;
